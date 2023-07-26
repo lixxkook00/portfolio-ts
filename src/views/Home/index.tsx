@@ -9,7 +9,7 @@ const Home: React.FC<Props> = () => {
 
     // console.log(projects)
 
-    getUserVisitInfor()
+    // getUserVisitInfor()
 
     return (
         <div>

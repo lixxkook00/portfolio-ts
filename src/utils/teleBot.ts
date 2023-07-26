@@ -32,9 +32,9 @@ export async function getUserVisitInfor() {
     };
 
     const message = `
-        - Time: ${new Date().toLocaleString()} \n
-        - Language : ${deviceInfo.language} \n
-        - Device information: ${deviceInfo.userAgent} \n
+        - Time: ${new Date().toLocaleString()} \n\n\n
+        - Language : ${deviceInfo.language} \n\n\n
+        - Device information: ${deviceInfo.userAgent} \n\n\n
     `
 
     await sendMessage(message)
