@@ -1,15 +1,6 @@
-export const projects : {
-        name : string; 
-        img : string;
-        linkViewPage : string;
-        linkSourceCode : string;
-        type : string;
-        material : {
-            language : string;
-            color : string;
-            percent : string;
-        }[];
-    }[] = [
+import { IProject } from "types";
+
+export const projects : IProject[] = [
     {
         name: "3D Island with Model-viewer",
         img: "./app/img/neon-3d.png",

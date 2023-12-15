@@ -1,6 +1,5 @@
 import React from 'react';
-import { projects } from '../../data/projects';
-import { getUserVisitInfor } from '../../utils/teleBot';
+import { getUserInfor } from 'services/teleBot';
 
 
 type Props = {};
@@ -9,7 +8,7 @@ const Home: React.FC<Props> = () => {
 
     // console.log(projects)
 
-    getUserVisitInfor()
+    getUserInfor()
 
     return (
         <div>

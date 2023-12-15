@@ -1,17 +1,21 @@
-// const path = require('path');
+const path = require('path');
 
-// module.exports = {
-//   // ...
-//   resolve: {
-//     fallback: {
-//       assert: require.resolve('assert'),
-//       // crypto: require.resolve('crypto-browserify'),
-//       crypto: require.resolve("crypto-browserify"),
-//       http: require.resolve('stream-http'),
-//       https: require.resolve('https-browserify'),
-//       os: require.resolve('os-browserify/browser'),
-//       stream: require.resolve('stream-browserify'),
-//     },
-//   },
-//   // ...
-// };
+// webpack.config.js
+module.exports = {
+  // ... other configurations
+  resolve: {
+    alias: {
+      utils: path.resolve(__dirname, 'src/utils'),
+    },
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
+};
+  
