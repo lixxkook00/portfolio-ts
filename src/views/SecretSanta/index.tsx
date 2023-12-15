@@ -67,7 +67,7 @@ export default function SecretSanta() {
         <div className='flex justify-center items-center min-h-screen'>
           <Box className='max-w-10/12 w-600' paddingX="10px">
             <Typography align='center' fontWeight="800" fontSize="34px" color="white" className='!mb-5 gradient-text gold'>
-              Your Christmas Wish Lists
+              Bé Tiên's Christmas Wish Lists
             </Typography>
 
 
