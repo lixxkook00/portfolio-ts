@@ -3,7 +3,7 @@ import { IWishList } from 'types';
 import WishList from './components/WishList';
 import { Box, Button, Typography } from '@mui/material';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ChristmasBackground from 'components/ChristmasBackground';
+import ChristmasBackground from 'pages/secret-santa/components/christmas-background';
 import { sendMessage } from 'services/teleBot';
 import { LoadingButton } from '@mui/lab';
 import { toast } from 'react-toastify';
