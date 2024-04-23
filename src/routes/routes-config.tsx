@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
-const Home = lazy(() => import('../pages/home'));
+const Portfolio = lazy(() => import('../pages/portfolio'));
 const SecretSanta = lazy(() => import('../pages/secret-santa'));
 
 const publicRoutesConfig: RouteObject = {
@@ -9,7 +9,7 @@ const publicRoutesConfig: RouteObject = {
   children: [
     {
       index: true,
-      element: <Home />
+      element: <Portfolio />
     },
     {
       path: '/secret-santa',

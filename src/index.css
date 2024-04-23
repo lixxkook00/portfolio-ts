@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./styles/_variables.scss";
+@import "./styles/_globals.scss";
+@import "./styles/_animations.scss";
+
 .gradient-text {
     font-style: italic;
     text-transform: uppercase;
@@ -11,4 +15,9 @@
 
 .gradient-text.gold {
     background-image: linear-gradient(180deg, #FFEF9F 0%, #C29533 30%, #9D6E13 47%, #9D6E13 56%, #C29533 66%, #FFEF9F 100%);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
